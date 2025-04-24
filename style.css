@@ -5,9 +5,10 @@ body {
   position: relative;
   font-family: 'Arial', sans-serif;
   text-align: center;
-  padding: 50px;
+  padding: 20px;
   margin: 0;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .overlay {
@@ -21,21 +22,24 @@ body {
 }
 
 .top-photo {
-  width: 300px;
+  width: 90%;
+  max-width: 300px;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+
 }
 
 h1 {
   color: #d63384;
-  font-size: 2em;
-  margin-bottom: 40px;
+  font-size: 1.6em;
+  margin-bottom: 30px;
 }
 
 .nomes {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin-top: 10px;
   color: #a60055;
 }
@@ -43,7 +47,9 @@ h1 {
 .button-container {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
+  align-items: center;
+  position: relative;
 }
 
 button {
@@ -51,12 +57,11 @@ button {
   color: white;
   border: none;
   padding: 15px 25px;
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 12px;
   cursor: pointer;
   transition: transform 0.3s;
-  position: relative;
-  z-index: 1;
+
 }
 
 button:hover {
@@ -65,7 +70,8 @@ button:hover {
 
 #botao10mil {
   position: absolute;
+  top: 50%;
   left: 50%;
-  top: 60%;
   transform: translate(-50%, -50%);
 }
+
